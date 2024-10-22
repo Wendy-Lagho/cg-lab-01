@@ -15,5 +15,11 @@ def draw_line(context, x1, y1, x2, y2, color, width):
     context.line_to(x2, y2)
     context.stroke()
 
+def draw_arc(context, x1, y1, radius, a1, a2, colour, width):
+    context.set_source_rgb(*colour)
+    context.set_line_width(width)
+    context.arc(x1, y1, radius, a1, a2)
+    context.stroke()
+
 def write_to_surface(surface, context, filename):
     surface.write_to_png(filename)

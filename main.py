@@ -19,6 +19,14 @@ if __name__ == '__main__':
     draw_arc(context, 400, 100, 70, (math.pi/4), (5*math.pi/4), (0,0,1), 2)
     # draw_arc(context, 400, 100, 70, (math.pi / 4), (5 * math.pi / 4), (0, 0, 1), 2)
 
+    draw_rectangle(context, 150, 400, 50,50, (0, 0, 1), 2)
+    draw_rectangle(context, 300, 400, 50,50, (0, 0, 1), 2)
+
+    draw_line(context, 175, 400, 175, 450, (0, 1, 0), 2)
+    draw_line(context, 150, 425, 200, 425, (0, 1, 0), 2)
+    draw_line(context, 325, 400, 325, 450, (0, 1, 0), 2)
+    draw_line(context, 300, 425, 350, 425, (0, 1, 0), 2)
+
 
     write_to_surface(surface, context, 'output.png')
 

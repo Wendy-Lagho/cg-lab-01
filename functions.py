@@ -21,5 +21,11 @@ def draw_arc(context, x1, y1, radius, a1, a2, colour, width):
     context.arc(x1, y1, radius, a1, a2)
     context.stroke()
 
+def draw_rectangle(context, x1, y1, length, height, colour, width):
+    context.set_source_rgb(*colour)
+    context.set_line_width(width)
+    context.rectangle(x1, y1, length, height)
+    context.stroke()
+
 def write_to_surface(surface, context, filename):
     surface.write_to_png(filename)
